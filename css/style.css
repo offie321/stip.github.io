@@ -1,0 +1,458 @@
+/*-----------------------Needs to be fixed-------------------------------------
+* What else?
+*
+-----------------------------------------------------------------------------*/
+
+
+
+
+
+/* ----------------------------- Main Style -------------------------------- */
+
+*{
+  font-family: 'poppins';
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+
+/*border:1px solid red; */
+
+}
+
+
+
+#overlay-nav{
+  display: none;
+}
+
+
+.center-a-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+
+
+}
+
+body{
+  overflow-x: hidden;
+  background-color: #e5e5e5;
+  max-width: 100vw;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 100px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10000px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+/* Preloader */
+#preloader {
+			position:fixed;
+		  top:0px;
+		  right:0px;
+		  width:100%;
+		  height:100%;
+		  background-color:black;
+		  background-image:url("../images/squid_animation.gif");
+		  background-repeat:no-repeat;
+		  background-position:center;
+      background-attachment: fixed;
+		  z-index:1000;
+		  filter: alpha(opacity=40);
+}
+
+.footer-list-1{
+
+}
+
+header{
+  background-image:url("../images/title_image.jpg");
+
+  text-align: center;
+  vertical-align: middle;
+  height:100vh;
+  margin: 0 auto;
+  background-size: cover;
+
+
+}
+
+#header-gradient-animation{
+background: linear-gradient(247deg, #0043ff, #007fff, #0043ff, #007fff, #0043ff);
+background-size: 1200% 500%;
+background-color: green;
+height:100vh;
+opacity: 0.8;
+
+
+-webkit-animation: AnimationName 40s infinite;
+-moz-animation: AnimationName 40s infinite;
+animation: AnimationName 40s infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0% 11%}
+
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0% 11%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0% 11%}
+}
+
+header h1{
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(50, 50, 50, 0.5);
+  color: #e5e5e5;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 25px;
+
+
+}
+
+/* navbar */
+#head-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    font-family: 'poppins';
+    z-index: 20;
+    margin-left: 10%;
+}
+
+#head-nav li {
+    float: left;
+}
+
+#head-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#head-nav li a:hover {
+    background-color: rgba(170, 170, 170, 0.2);
+    transition:0.4s ease-out;
+}
+
+.logo_awesome-face{
+  transition: 2s;
+}
+
+.logo_awesome-face:hover{
+  transform: rotate(360deg);
+}
+
+
+/* scrolldownbtn */
+
+@-webkit-keyframes bounce {
+        0% {
+    transform: scale(1) translate(0px, 0px);
+  }
+
+  30%{
+    transform: scale(1) translate(0px, 10px);
+  }
+
+  75%{
+    transform: scale(1) translate(0px, -25px);
+  }
+
+ 100% {
+    transform: scale(1) translate(0px, 0px);
+  }
+}
+
+.scrolldwnbtn {
+  text-align:center;
+  margin:0 auto;
+  margin-top: -150px;
+  height:20px;
+  width:10%;
+  padding:20px;
+  -webkit-animation: bounce 3s infinite;
+  color: white;
+  z-index: 45;
+  transition: 1s ease;
+
+}
+
+.scrolldwnbtn:hover{
+  color: rgb(84, 198, 255);
+
+}
+
+
+#content{
+
+}
+
+.sect-1-header, .sect-2-header, .sect-3-header {
+  background-image: url("../images/clouds_4k.png");
+  background-color: rgba(125,125,125, 0.4);
+  background-attachment:  fixed;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  text-align: center;
+
+}
+
+
+.sect-header-h2{
+  padding-top: 100px;
+  font-size: 40px;
+  background-color: rgba(0, 140, 255, 0.4);
+  height: 150px;
+
+}
+
+
+
+.sect-header-content{
+
+}
+
+#sect-1{
+
+  height: auto;
+  background-color: #e5e5e5;
+  padding:1vw;
+  width: 90vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#sect-2{
+  padding: 1vw;
+  background-color: #e5e5e5;
+  overflow: hidden;
+
+
+
+
+}
+
+#sect-3{
+  background-color: #e5e5e5;
+  padding:1vw;
+  width: 90vw;
+  margin: 0 auto;
+  overflow:hidden;
+
+
+}
+
+
+#title-article {
+  background-color:#3399cc;
+  background-size: 0% 100%;
+	color:#fff;
+	font-size:20px;
+  padding-top: 2%;
+  padding-bottom:2%;
+	text-align:center;
+  transition: background-color .5s;
+  width: 100%;
+
+}
+
+#title-article:hover {
+  background-color:rgb(51, 153, 204);
+  background-image:linear-gradient(to right top , rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0.4) 100%);
+  background-repeat:no-repeat;
+  background-size: 200% 100%;
+  transition:background-size 1s, background-color 1s;
+}
+
+#title-article:active {background-color:rgb(51, 173, 284); transition:background-size 0}
+
+.art-3-blocks{
+  float: left;
+  width: 26vw;
+  margin:2vw;
+  background-color: white;
+  height: 500px;
+
+}
+
+.art-3-blocks p{
+  margin: 1vw;
+}
+
+.art-wide-blocks{
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 2vw;
+  margin-top: 2vw;
+  overflow:auto;
+  padding: 1vw;
+  background-color: white;
+
+}
+
+
+
+footer{
+
+  background-color:rgb(18, 118, 168);
+  bottom: 0px;
+  padding: 2vw;
+}
+
+.hamburger, .cross{
+  display: none;
+}
+
+.logo_awesome-face-mobile{
+  display: none;
+}
+
+
+
+
+/* ----------------------------- Mobile style ------------------------------ */
+@media screen and (max-width: 850px) {
+
+  [data-aos-duration] {
+      transition: 0.2s !important;
+  }
+
+
+  .art-3-blocks{
+    float: left;
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    background-color: white;
+
+  }
+
+  .art-3-blocks p{
+    margin: 1vw;
+  }
+
+  .art-wide-blocks{
+    width: 84vw;
+    margin: 0 auto;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    overflow:auto;
+    padding: 4vw;
+    background-color: white;
+
+  }
+
+  footer{
+
+    background-color:rgb(18, 118, 168);
+    bottom: 0px;
+    padding: 4vw;
+  }
+
+  .hamburger, .cross{
+    display: block;
+    position: absolute;
+    top:0;
+    padding:2vw;
+    z-index: 20;
+    right: 5vw;
+    font-size:6vw;
+    color: lightblue;
+    cursor: pointer;
+
+  }
+
+  #head-nav{
+    display: none;
+  }
+
+#overlay-nav{
+  display: none;
+  position: fixed;
+  z-index: 50;
+
+}
+
+  #overlay-nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      font-family: 'poppins';
+      z-index: 20;
+      margin-left: 10%;
+      background-color:rgba(18, 118, 168);
+      height: 100vh;
+
+  }
+
+  #overlay-nav li {
+      float: left;
+      width: 100vw;
+  }
+
+  #overlay-nav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  #overlay-nav li a:hover {
+      background-color: rgba(170, 170, 170, 0.2);
+      transition:0.4s ease-out;
+  }
+
+
+
+
+}
+
+/*  Tablet style  */
